@@ -127,8 +127,10 @@ class OthelloGUI:
         pygame.display.set_caption("オセロ")
         self.game_state = GameState()
         self.running = True
-        self.font = pygame.font.SysFont("Arial", 24)
-        self.small_font = pygame.font.SysFont("Arial", 18)
+        # 日本語表示に対応したフォントを、カンマ区切りで優先順位順に指定
+        jp_font_names = "ipagothic, ms-gothic, meiryo, sans-serif"
+        self.font = pygame.font.SysFont(jp_font_names, 24)
+        self.small_font = pygame.font.SysFont(jp_font_names, 18)
         self.ai_opponent = True  # AI対戦相手を有効にする
         self.ai_player = 'O'     # AIは白石を担当
 
