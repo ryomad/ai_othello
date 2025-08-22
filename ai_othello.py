@@ -128,7 +128,7 @@ class OthelloGUI:
         self.game_state = GameState()
         self.running = True
         # 日本語表示に対応したフォントを、カンマ区切りで優先順位順に指定
-        jp_font_names = "ipagothic, ms-gothic, meiryo, sans-serif"
+        jp_font_names = "ipaexgothic, ipagothic, ms-gothic, meiryo, sans-serif"
         self.font = pygame.font.SysFont(jp_font_names, 24)
         self.small_font = pygame.font.SysFont(jp_font_names, 18)
         self.ai_opponent = True  # AI対戦相手を有効にする
