@@ -1,36 +1,36 @@
-# AI Othello
+# AI オセロ
 
-A simple Othello (Reversi) game built with Python and Pygame. You can play against a basic AI opponent.
+PythonとPygameで作成された、シンプルなオセロ（リバーシ）ゲームです。基本的なAI対戦相手とプレイすることができます。
 
-## Features
+## 主な機能
 
-- Graphical user interface using Pygame.
-- Play as Black against a computer-controlled White player.
-- The AI selects a random valid move.
-- Score tracking and game-over detection.
-- Automatic pass-turn logic.
+- Pygameによるグラフィカルなユーザーインターフェース
+- 黒石（あなた） vs 白石（コンピュータ）での対戦
+- AIは有効な手の中からランダムに着手します
+- スコア追跡とゲーム終了判定
+- 有効な手がない場合の自動パスターン機能
 
-## Requirements
+## 必要なもの
 
 - Python 3
 - `pygame`
 - `numpy`
 
-## Installation
+## インストール方法
 
-1.  Clone the repository to your local machine.
+1.  お使いのコンピュータにリポジトリをクローンします。
 
-2.  Install the required packages using pip:
+2.  pipを使って必要なパッケージをインストールします:
     ```bash
     pip install -r requirements.txt
     ```
 
-## How to Play
+## 遊び方
 
-Run the main script from your terminal:
+ターミナルからメインスクリプトを実行します:
 
 ```bash
 python ai_othello.py
 ```
 
-The game window will open. You play as Black ('X'). Click on a valid square to make your move. The AI (White, 'O') will automatically make its move after yours. The game ends when neither player can make a move, and the winner will be displayed.
+ゲームウィンドウが開きます。あなたは黒（'X'）です。有効なマスをクリックして石を置いてください。あなたの手の後、AI（白, 'O'）が自動的に着手します。両プレイヤーが着手できなくなるとゲームは終了し、勝者が表示されます。
